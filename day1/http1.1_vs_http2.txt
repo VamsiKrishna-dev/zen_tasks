@@ -1,0 +1,28 @@
+HTTP (Hypertext Transfer Protocol) is a set of rules that runs on top of the TCP/IP suite of protocols and defines how files are to be transferred between clients and servers on the world wide web. HTTP is a stateless protocol, meaning that the server does not maintain any state between requests.
+
+HTTP/1.1 :
+    > The first standardized version of HTTP, was introduced in 1997. 
+    > introduced persistent connection , pipelining , Cache-control and many other features.
+  
+
+Key features of HTTP/1.1 :
+    > It was not required for each connection to be terminated immediately after every request was served with a response as in previous HTTP verisons; instead, with the keep-alive header, it was possible to have persistent connections. It allowed multiple requests/responses per TCP connection.
+    > It allowed the server to send a response to a request without having to wait for the entire request to be received.
+
+HTTP/2 :
+    > It is a new version of HTTP/1.1 that is designed to be more efficient and more scalable.
+    > It is based on the SPDY protocol, which is a new version of HTTP/2.
+    > The SPDY protocol is an open-source, Transmission Control Protocol (TCP)-based, application layer protocol that transports content over the Web
+
+Key features of HTTP/2 :
+    > It introduces the concept of a server push where the server anticipates the resources that will be required by the client and pushes them prior to the client making requests
+    > Introduces the concept of multiplexing that interleaves the requests and responses without head-of-line blocking and does so over a single TCP connection.
+    > It is a binary protocol (0's and 1's). The binary framing layer divides the message into frames that are segregated based on their type – Data or Header. The data frames contain the actual data and the header frames contain the metadata.
+    > HTTP/2 uses HPACK header compression algorithm. It is a compression algorithm that compresses the headers of the request and response.
+
+Differences between HTTP/1.1 and HTTP/2 :
+   
+    > HTTP/1.1 works on the textual format where HTTP/2 works on the binary protocol.
+    > In HTTP/1.1 there is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources but, HTTP/2 allows multiplexing so one TCP connection is required for multiple requests.
+    > HTTP/1.1 uses requests resource Inlining for use getting multiple pages wherein HTTP/2 PUSH frame by server that collects all multiple pages 
+    > HTTP/1.1 compresses data by itself but, HTTP/2 uses HPACK for data

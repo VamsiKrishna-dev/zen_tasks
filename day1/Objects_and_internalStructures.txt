@@ -1,0 +1,114 @@
+                        OBJECTS AND ITS INTERNAL REPRESENTATION IN JAVASCRIPT
+
+OBJECT ORIENTED PROGRAMMING
+    > Object-oriented programming (OOP) is a computer programming model that organizes software design around data, or objects, rather than functions and logic. An object can be defined as a data field that has unique attributes and behavior.
+    > The Structural Pattern in OOP is the class.
+    > The Behavioral Pattern in OOP is the object.
+    > The class defines the attributes and behavior of the object.
+    > The object is the instance of the class.
+    > Examples: Java, C++, C#, Python, PHP, Ruby,etc.
+
+OBJECT BASED PROGRAMMING 
+    > The term object-based language may be used in a technical sense to describe any programming language that uses the idea of encapsulating state and operations inside objects. Object-based languages need not support inheritance or subtyping
+    > Object-Based languages have in-built objects.
+    > Javascript, VB are the examples of object bases languages.
+
+                            OBJECTS IN JAVASCRIPT
+OBJECT:
+    > The Object class represents one of JavaScript's data types. 
+    > It is used to store various keyed collections and more complex entities. 
+    > Objects can be created using the Object() constructor or the object initializer / literal syntax.
+    >Objects are more complex and each object may contain any combination of these primitive data-types as well as reference data-types.
+    > For Eg. If your object is a student, it will have properties like name, age, address, id, etc and methods like updateAddress, updateName, etc.
+
+Objects and Properties:
+    > Nearly all objects in JavaScript are instances of Object
+    > Each object has a property called constructor which is a reference to the function that created the object.
+    > Each object has a property called prototype which is a reference to the prototype object of the function that created the object.
+    >The Object constructor creates an object wrapper for the given value.
+        > If the value is null or undefined, it will create and return an empty object.
+        > If the value is an object already, it will return the value.
+        > Otherwise, it will return an object of a Type that corresponds to the given value.
+    >When called in a non-constructor context, Object behaves identically to new Object().
+    > We can access the properties of an object with:
+        > object.property
+        > object["property"]
+        > object.property = value
+        > object["property"] = value
+
+Creating a JavaScript Object
+    > Using an Object Literal
+        > const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+    > Using the JavaScript Keyword new
+        > const person = new Object();
+        > person.firstName = "John";
+        > person.lastName = "Doe";
+        > person.age = 50;
+        > person.eyeColor = "blue";
+
+Accessing JavaScript Properties
+    > To access the properties of an object, we can use dot notation or bracket notation.
+        > person.firstName
+        > person["firstName"]
+        > person.lastName
+        > person["lastName"]
+        > person.age
+        > person["age"]
+        > person.eyeColor
+        > person["eyeColor"]
+
+JavaScript Object Methods
+    > To access the methods of an object, we can use dot notation or bracket notation.
+        > person.updateName("John", "Smith") // updates the person object
+        > person["updateName"]("John", "Smith") // updates the person object
+        > person.updateAddress("New York") // updates the person object
+        > person["updateAddress"]("New York") // updates the person object
+
+JavaScript Object Constructors
+    > Constructor is nothing but a function and with help of new keyword, constructor function allows to create multiple objects
+    > example: example of a contructor function.
+            function Person(first, last, age, eye) {
+                 this.firstName = first;
+                 this.lastName = last;
+                 this.age = age;
+                 this.eyeColor = eye;
+                }
+            const myFather = new Person("John", "Doe", 50, "blue"); // creates a new person object
+            const myMother = new Person("Sally", "Rally", 48, "green"); // creates a new person object
+
+JavaScript Accessors
+    > Accessors are properties that are used to get or set the value of an object.
+    > JavaScript Getter
+        > const person = {
+            firstName: "John",
+            lastName: "Doe",
+            language: "English",
+            get lang() { // getter method
+                return this.language;
+                }
+            };
+        > person.lang // returns "English"
+    > JavaScript Setter
+        > const person = {
+            firstName: "John",
+            lastName: "Doe",
+            language: "English",
+            set lang(newLang) { // setter method
+                this.language = newLang;
+                }
+            };
+        > person.lang = "Spanish"; // sets the language to "Spanish"
+        > person.lang // returns "Spanish"
+
+JavaScript Object Prototypes
+    > JavaScript objects inherit properties and methods from other objects.
+    > The prototype property of an object is where we put methods and properties that we want other objects to inherit.
+    > The constructor property of an object is a reference to the function that created the object.
+    > The prototype property of a function is a reference to the prototype object of the function.
+    > Examples:
+        > Object.prototype.constructor // returns the function that created the object
+        > Object.prototype.__proto__ // returns the prototype object of the function that created the object
+        > Object.prototype.__defineGetter__() // defines a getter for an object
+        > Object.prototype.__defineSetter__() // defines a setter for an object
+        > Object.prototype.__lookupGetter__() // returns a getter for an object
+        > Object.prototype.__lookupSetter__() // returns a setter for an object
