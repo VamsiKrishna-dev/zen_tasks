@@ -1,0 +1,116 @@
+{
+    "personalDetails": {
+        "firstName": "Evaturi",
+        "lastName": "Vamsi Krishna",
+        "dateofbirth": "04-Sep-1996",
+        "email_ID": "vamsi.evaturi@gmail.com",
+        "mobile": 8374086692,
+        "location": {
+            "country": "India",
+            "city": "Hyderabad",
+            "address": "Nayonika Residency, Secunderabad"
+        }
+    },
+    "social_links": {
+        "linkedIn": "https://www.linkedin.com/in/evaturivk/",
+        "gitHub": "https://github.com/VamsiKrishna-dev",
+        "onlineResume": "https://zety.com/profile/evaturi-vamsikrishna"
+    },
+    "professionalSummary": "Full Stack Developer with industry ready experience in MERN stack",
+    "workHistory": {
+        "company1": {
+            "companyName": "Pole To Win India Pvt Ltd",
+            "companyLocation": "Bengaluru",
+            "companyAddress": "Kammanahalli",
+            "designation": "Functional Test Engineer",
+            "joinDate": "07-10-2019",
+            "endDate": "22-05-2021",
+            "isCurrentCompany": false,
+            "technologies": ["JIRA", "TestRail", "MS Office", "Manual Testing"]
+
+        },
+        "company2": {
+            "companyName": "Indium Software",
+            "companyLocation": "Bengaluru",
+            "companyAddress": "Whitefeild",
+            "designation": "Test Engineer",
+            "joinDate": "25-05-2021",
+            "endDate": "10-12-2021",
+            "isCurrentCompany": false,
+            "technologies": ["JIRA", "TestRail", "MS Office", "Manual Testing"]
+
+        },
+        "company3": {
+            "companyName": "Electroni Arts",
+            "companyLocation": "Hyderabad",
+            "companyAddress": "Madhapur",
+            "designation": "QA Tester",
+            "joinDate": "13-12-2021",
+            "endDate": null,
+            "isCurrentCompany": true,
+            "technologies": ["JIRA", "TestRail", "MS Office", "Manual Testing", "Python"]
+        }
+    },
+    "skills": ["Python", "HTML", "CSS", "Node.JS", "React JS", "Functional Testing", "Automation Testing", "PyScript"],
+    "education": {
+        "isGraduate": true,
+        "isPostGraduate": false,
+        "graduation": {
+            "collegeName": "Rajiv Gandhi Institue of Technology",
+            "universityName": "Visvesvaraya Technologoical University",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "course": "Bachelor of Engineering",
+            "branch": "Computer Science and Engineering",
+            "year_passed": 2019,
+            "cgpa": 6.54,
+            "gradeClass": "second",
+            "backlogs": false
+        },
+        "seniorSecondaryEdccation": {
+            "schoolName": "JNV Kurnool",
+            "location": "Banvasi",
+            "city": "Kurnool",
+            "is_CBSE": true,
+            "is_ICSE": false,
+            "board": "CBSE",
+            "year_passed": 2014,
+            "specialzation": "PCMB",
+            "passPercentage": 68,
+            "gradeClass": "Second"
+        },
+        "secondaryEdccation": {
+            "schoolName": "JNV Kurnool",
+            "location": "Banvasi",
+            "city": "Kurnool",
+            "is_CBSE": true,
+            "is_ICSE": false,
+            "board": "CBSE",
+            "year_passed": 2012,
+            "cgpa": 8.83,
+            "gradeClass": "First"
+        }
+    },
+    "hobbies": ["Video Games", " Photography", "Traveling", "Reading Books", "Music"],
+    "languages": [{
+        "english": {
+            "isMotherTounge": false,
+            "read": "Professional",
+            "write": "Professional",
+            "speak": "Professional"
+        },
+        "hindi": {
+            "isMotherTounge": false,
+            "read": "Intermediate",
+            "write": "Intermediate",
+            "speak": "Intermediate"
+        },
+        "telugu": {
+            "isMotherTounge": true,
+            "read": "Professional",
+            "write": "Professional",
+            "speak": "Professional"
+        }
+    }]
+
+}
