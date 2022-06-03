@@ -10,6 +10,6 @@ request.onload = function (e) {
   console.log("Country Population: ",response[i].population);
   console.log("Country Region: ",response[i].region);
   console.log("Country Sub-region: ",response[i].subregion);
-  console.log(response[i].flags.png);
+  console.log("Country Flag:",response[i].flags.png);
   }
 };
